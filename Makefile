@@ -113,8 +113,8 @@ INC		= -I includes/
 
 NASMFLAGS	= -f elf $(INC) -Werror
 
-#CFLAGS		= -lSDL -lSDL_ttf -s
-CFLAGS		= -L./lib -lSDL -lSDL_ttf -lpthread -lm -ldl -Xlinker "-rpath=./lib"
+CFLAGS		= -lSDL -lSDL_ttf -s
+#CFLAGS		= -L./lib -lSDL -lSDL_ttf -lpthread -lm -ldl -Xlinker "-rpath=./lib"
 
 RM		= rm -f
 
