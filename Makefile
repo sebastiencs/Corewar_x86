@@ -111,18 +111,17 @@ CC		= gcc
 
 INC		= -I includes/
 
-NASMFLAGS	= -f elf $(INC) -g -F dwarf -Werror
+NASMFLAGS	= -f elf $(INC) -Werror
 
-CFLAGS		= -lSDL -lSDL_ttf
-# CFLAGS		= -Wall -Wextra -L./SDL -lSDL -lSDL_ttf -Xlinker "-rpath=./SDL" -lpthread -lm -ldl -lSDL 
+#CFLAGS		= -lSDL -lSDL_ttf -s
+CFLAGS		= -L./lib -lSDL -lSDL_ttf -lpthread -lm -ldl -Xlinker "-rpath=./lib"
 
 RM		= rm -f
 
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-#		$(CC) -m32 -o $(NAME) $(OBJS) tmp.o $(CFLAGS)
-		$(CC) -m32 -o $(NAME) $(OBJS) tmp.o -ggdb $(CFLAGS)
+		$(CC) -m32 -o $(NAME) $(OBJS) $(CFLAGS)
 		@echo -e "\033[0;032m[$(NAME)] Compiled\033[0;0m"
 
 %.o:		%.asm
