@@ -54,7 +54,7 @@ proc	is_error_in_args, argc1, argv1
 
 				invoke	my_strcmp, [ebx + (ecx * 4)], str1
 				test	eax, eax
-				jz	.FAIL
+				jnz	.FAIL
 
 			ENDIF
 
