@@ -1,6 +1,8 @@
 Corewar ASM x86
 =====
 
+![Alt text](img/corewar.png?raw=true "Corewar ASM")
+
 Testé sous Fedora 20 x86_64.  
 J'ai du installé certaines libs:  
 
