@@ -17,6 +17,7 @@ proc	find_max_prog_number, champions
 	pushx	edx
 
 	mov	eax, [champions]
+	xor	edx, edx
 
 	WHILE	eax, ne, 0
 
