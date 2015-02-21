@@ -121,6 +121,7 @@ RM		= rm -f
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
+		@echo -e "\033[0;032mASM files assembled\033[0;0m"
 		$(CC) -m32 -o $(NAME) $(OBJS) $(CFLAGS)
 		@echo -e "\033[0;032m[$(NAME)] Compiled\033[0;0m"
 
