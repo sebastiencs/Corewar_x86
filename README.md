@@ -5,7 +5,7 @@ Corewar ASM x86
 
 Corewar_x86 is a Virtual Machine fully written in Assembly language using Intel syntax.   
 It's fully functional, if you found bugs please report them.   
-This project derived from the 'Corewar' project [https://github.com/sebastiencs/corewar] written in C.
+This project derived from the 'Corewar' project [https://github.com/sebastiencs/corewar] written in C.   
 It doesn't include the Assembler, only the VM.   
 
 Tested with Fedora 20 x86_64.  
