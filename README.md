@@ -11,7 +11,7 @@ It doesn't include the Assembler, only the VM.
 Tested with Fedora 20 x86_64.  
 I needed to install some librairies:  
 
-`# yum install glibc.i686 ncurses-libs.i686 libstdc libzip.i686 libX11.i686 libXrandr.i686 SDL.i686 SDL_ttf.i686`
+`# yum install glibc.i686 ncurses-libs.i686 libstdc libzip.i686 libX11.i686 libXrandr.i686 SDL.i686 SDL_ttf.i686 glibc-devel.i686 `
   
 Command line:   
 `$ ./corewar champions/42.cor champions.try_again.cor`  
