@@ -123,7 +123,7 @@ all:		$(NAME)
 $(NAME):	$(OBJS)
 		@echo -e "\033[0;032mASM files assembled\033[0;0m"
 		$(CC) -m32 -o $(NAME) $(OBJS) $(CFLAGS)
-		@echo -e "\033[0;032m[$(NAME)] Compiled\033[0;0m"
+		@echo -e "\033[0;032m[$(NAME)] Linked\033[0;0m"
 
 %.o:		%.asm
 		$(NASM) $(NASMFLAGS) -o $@ $<
