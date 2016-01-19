@@ -19,6 +19,8 @@ proc	my_strlen, string
 	xor	eax, eax
 	mov	ecx, 0xffffffff
 	mov	edi, [string]
+	test	edi, edi
+	jz	end
 	cld
 
 	repne	scasb
@@ -27,6 +29,6 @@ proc	my_strlen, string
 	dec	ecx
 
 	mov	eax, ecx
-	popx	ecx, edi
+end:	popx	ecx, edi
 
 endproc
